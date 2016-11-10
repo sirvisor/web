@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>팝오버</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+        h2 {
+            margin: 20px 0;
+        }
+        
+        button.btn {
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .inner {
+            margin: 200px auto;
+            width: 70%
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $(function () {
+                $('.popover-show').popover('show');
+            });
+            $(function () {
+                $('.popover-hide').popover('hide');
+            });
+            $(function () {
+                $('.popover-destroy').popover('destroy');
+            });
+            $(function () {
+                $('.popover-toggle').popover('toggle');
+            });
+            $(function () {
+                $('.popover-options a').popover({
+                    html: true
+                });
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>팝 오 버 </h2>
+
+        <div class="inner">
+
+            <button type="button" class="btn btn-default
+popover-show" title="팝 오 버 제 목 " data-container="body" data-toggle="popover" data-placement="left" data-content="show">팝오버 좌측</button>
+            <button type="button" class="btn btn-primary
+popover-hide" title="팝 오 버 제 목 " data-container="body" data-toggle="popover" data-placement="top" data-content="Hide">팝오버 상단</button>
+            <button type="button" class="btn btn-success
+popover-destroy" title="팝 오 버 제 목 " data-container="body" data-toggle="popover" data-placement="bottom" data-content="Destory">팝오버 하단</button>
+            <button type="button" class="btn btn-warning
+popover-toggle" title="팝 오 버 제 목 " data-container="body" data-toggle="popover" data-placement="top" data-content="toggle">팝오버 우측</button>
+
+            <div class="clearfix"></div>
+
+            <hr>
+
+
+            <p class="popover-options">
+                <a href="#" type="button" class="btn
+btn-warning" title="<h3>제 목 </h3>" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<h4>팝 오 버 옵 션 메 소 드 일 때 HTML 태 그 도 적 용 가 능 </h4>">
+ HTML이 적 용 된 팝 오 버
+ </a>
+            </p>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

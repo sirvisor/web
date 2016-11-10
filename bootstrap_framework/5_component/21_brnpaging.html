@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>경로와 페이지이동내비게이션=페이지네이션</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1> 경로와 페이지네이션 </h1>
+        <hr>
+        <h4>경 로 </h4>
+        <!--경로표기:breadcrumb-->
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#">menu1 </a>
+            </li>
+            <li class="active">submenu</li>
+        </ol>
+
+
+        <hr>
+        <h4>페 이 지 네 이 션 </h4>
+        <!--1,2,3,4 그 넘어갈수 있는 폼을 자동으로 만들어줘 : pagination-->
+        <ul class="pagination">
+            <li><a href="#">«</a>
+            </li>
+            <li><a href="#">1</a>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">6</a>
+            </li>
+            <li><a href="#">7</a>
+            </li>
+            <li><a href="#">8</a>
+            </li>
+            <li><a href="#">9</a>
+            </li>
+            <li><a href="#">10</a>
+            </li>
+            <li><a href="#">»</a>
+            </li>
+        </ul>
+
+
+        <hr>
+        <h4>페 이 지 네 이 션 활 성 또 는 비 활 성 </h4>
+        <ul class="pagination">
+            <li class="disabled"><a href="#">«</a>
+            </li>
+            <li class="active"><a href="#">1</a>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">»</a>
+            </li>
+        </ul>
+
+
+        <hr>
+        <h4>span을 이 용 해 서 a 태 그 제 거 하 기 </h4>
+        <ul class="pagination">
+
+            <li class="disabled"><span>«</span>
+            </li>
+            <li class="active"><span>1 <span class="sr-only">
+(current)</span></span>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">»</a>
+            </li>
+        </ul>
+
+
+        <hr>
+        <h4>크 기 조 절 </h4>
+        <ul class="pagination pagination-lg">
+            <li class="disabled"><span>«</span>
+            </li>
+            <li class="active">
+                <span>1 <span class="sr-only">(current)
+</span></span>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">»</a>
+            </li>
+        </ul>
+
+        <hr>
+        <ul class="pagination pagination-sm">
+            <li class="disabled"><span>«</span>
+            </li>
+            <li class="active">
+                <span>1 <span class="sr-only">(current)
+</span></span>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">»</a>
+            </li>
+        </ul>
+
+
+        <hr>
+
+        <h4> 페이저가운데정렬 </h4>
+        <!--이전페이지 다음페이지 넘어가는거:pager 
+            기본적으로 가운데 정렬이라 몰려있어-->
+        <ul class="pager">
+            <li><a href="#">이 전 페 이 지 </a>
+            </li>
+            <li><a href="#">다 음 페 이 지 </a>
+            </li>
+        </ul>
+        <hr>
+
+
+        <h4> 페이저양끝정렬</h4>
+        <!--좌우로 쪼가쫙 양끝으로 가도록 가도록 하고 싶으면 
+            .previous, .next 쓰면된다-->
+        <ul class="pager">
+            <li class="previous"><a href="#">← 이 전 글 </a>
+            </li>
+            <li class="next"><a href="#">새 로 운 글 →</a>
+            </li>
+        </ul>
+
+
+        <hr>
+        <h4> 페이저비활성화 </h4>
+        <ul class="pager">
+            <li class="previous disabled"><a href="#">← 이전글 </a>
+            </li>
+            <li class="next"><a href="#">새 로 운 글 →</a>
+            </li>
+        </ul>
+    </div>
+    <!-- container 끝 -->
+</body>
+
+</html>

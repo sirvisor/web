@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩 그리드</title>
+ 
+    
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+<!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+ 
+ 
+<!-- 부트스트랩 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+ 
+<!-- 부트스트랩 추가 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+ 
+<!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ 
+<!-- 부트스트랩 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ 
+ 
+</head>
+<body>
+<!--드롭다운:메뉴를 눌렀을 때 하단으로 쳘쳐지는 것 반드시 js와 jQuery가 함께 사용되어야 함!-->
+    <div class="container">
+        <h1>드롬다운 메뉴</h1>
+        <hr>
+            <h2>기본적인 드롭다운</h2>
+        <div class="dropdown">
+<!--            data-toggle="dropdown": 드롭다운 메뉴 작동-->
+            <a data-toggle="dropdown" href="#">여기를 클릭하세요.</a>
+<!--            드롭다운 메뉴 만들기-->
+            <ul class="dropdown-menu" role="menu">
+<!--                tabindex="1":서브 메뉴일 경우 -1을 지정한다.-->
+                <li role="presentation">
+                    <a role="menuitem" href="#" tabindex="-1">메뉴 1</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" href="#" tabindex="-1">메뉴 2</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" href="#" tabindex="-1">메뉴 3</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1"href="#">분리된 메뉴</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h2>data-toggle="dropdown"이 없는 경우 아무 것도 없음.</h2>
+        <div class="dropdown">
+<!--            data-toggle="dropdown" 부분이 없으면 아무것도 보이지 않음-->
+              <ul class="dropdown-menu" role="menu">
+<!--                tabindex="1":서브 메뉴일 경우 -1을 지정한다.-->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 1</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 2</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#" >메뉴 3</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1"href="#">분리된 메뉴</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h2>class="pull-right"를 이용한 우측 정렬</h2>
+              <div class="dropdown">
+              <a data-toggle="dropdown" href="#">여기를 클릭하세요.</a>
+<!--            data-toggle="dropdown" 부분이 없으면 아무것도 보이지 않음-->
+              <ul class="dropdown-menu pull-right" role="menu">
+<!--                tabindex="1":서브 메뉴일 경우 -1을 지정한다.-->
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 1</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 2</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#" >메뉴 3</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1"href="#">분리된 메뉴</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h2>드롭다운에 별도의 헤더 추가 가능</h2>
+        <div class="dropdown">
+              <input type="button" data-toggle="dropdown" class="btn btn-default btn-primary" value="여기를 클릭하세요">
+<!--            data-toggle="dropdown" 부분이 없으면 아무것도 보이지 않음-->
+              <ul class="dropdown-menu" role="menu">
+<!--                tabindex="1":서브 메뉴일 경우 -1을 지정한다.-->
+                   <li role="presentation" class="dropdown-header">헤더</li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 1</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 2</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#" >메뉴 3</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation" class="dropdown-header">다른 헤더</li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1"href="#">분리된 메뉴</a>
+                </li>
+            </ul>
+        </div>
+        
+        <hr>
+        
+        <h2>li에 class="disabled" 속성 추가로 비활성화 가능</h2>
+        <div class="dropdown">
+            <button data-toggle="dropdown" class="btn btn-default btn-primary">여기를 클릭하세요</button>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation" >
+                    <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 1</a>
+                </li>
+                 <li role="presentation" class="disabled">
+                    <a role="menuitem" tabindex="-1" href="#">메뉴 2</a>
+                </li>
+                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#" >메뉴 3</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
+        

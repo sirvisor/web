@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>모달</h1>
+
+        <hr>
+        <!--
+        data-toggle="modal" : 토글시 모달 작동
+        data-taget="#modalWindow" : 보여줄 모달 윈도우
+        -->
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-taget="#modalWindow">
+            모달 윈도우 실행..
+        </button>
+
+        <hr>
+        <a class="btn btn-primary btn-lg" href="#modalWindow" data-toggle="modal">모달 윈도우 실행</a>
+
+
+        <!--모 달 윈 도 우 영 역 -->
+        <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog"  aria-labelledby="modalWindowLabel" aria-hidden="true">
+            <!--
+            role="dialog" : 접근성 부여
+            aria-hidden="true" : 스크린리더 건너띔
+            aria-labelledby="modalWindowLabel" : 모달 타이틀
+            -->
+
+            <!--모 달 다 이 얼 로 그 -->
+            <div class="modal-dialog">
+                <!--모 달 컨 텐 츠 영 역 -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                      	<!--data-dismiss="modal" : 현재의 모달창 종료-->
+                            <!--X버튼 동작 구현-->
+                            <span aria-hidden="true">&times;</span><!--스크린리더가 X를 건너띔-->
+                            <span class="sr-only">Close</span><!--스크린리더에게 읽도록 함-->
+                        </button>
+                        <h4 class="modal-title" id="modalWindowLabel">모달 제목 </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>뭘 넣어도 되는 곳. 내용 넣어라~</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">닫기 </button>
+                        <button type="button" class="btn btn-primary">변경사항저장 </button>
+                    </div>
+                </div>
+                <!--모 달 컨 텐 츠 끝 -->
+            </div>
+
+            <!--모 달 다 이 얼 로 그 끝 -->
+        </div>
+        <!--모 달 윈 도 우 끝 -->
+
+    </div>
+</body>
+
+
+</html>

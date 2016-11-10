@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>툴팁</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+        h2 {
+            margin: 20px 0;
+        }
+        
+        button.btn {
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .inner {
+            padding: 50px 0;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $('.tooltip-show').tooltip('show');
+            $('.tooltip-hide').tooltip('hide');
+            $('.tooltip-destroy').tooltip('destroy');
+            $('.tooltip-toggle').tooltip('toggle');
+            $('.tooltip-options a').tooltip({
+                html: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>툴 팁 메 소 드 </h2>
+        <div class="inner">
+            여 기 <a href="#" class="tooltip-show" data-toggle="tooltip" title="show">툴 팁 </a>은 항 상 보 여 진 다 .
+
+            <hr> 이 곳 에 적 용 된 <a href="#" class="tooltip-hide" data-toggle="tooltip" data-placement="top" title="hide">툴 팁
+</a>은 hide 속 성 이 적 용 되 어 숨 겨 져 있 다 .
+
+            <hr> 여 기 <a href="#" class="tooltip-destroy" data-toggle="tooltip" data-placement="top" title="destroy">툴 팁
+</a>은 destory 속 성 이 적 용 되 어 보 이 지 않 는 다 .
+            <hr> 여 기 <a href="#" class="tooltip-toggle" data-toggle="tooltip" data-placement="bottom" title="toggle">
+툴 팁 </a>은 toggle 이 적 용 되 어 있 다 .
+            <hr>
+
+            <p class="tooltip-options">
+                이 곳 에 적 용 된 <a href="#" data-toggle="tooltip" title="<h2>h2 속 성 적 용 </h2>" data-placement="bottom">툴 팁
+</a>은 HTML속성이 적용되어있다 .
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

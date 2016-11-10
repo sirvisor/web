@@ -1,0 +1,12 @@
+@font-face {
+    font-family:"NanumBarunGothic";
+    src:url("../fonts/NanumBarunGothic.eot");
+    src:local(""),
+        url("../fonts/NanumBarunGothic.woff") format("woff"),
+        url("../fonts/NanumBarunGothic.ttf") format("ttf"),
+        url("../fonts/NanumBarunGothic.svg") format("svg");
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "NanumBarunGothic", sans-serif;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>경로와 페이지</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <!--내 비 게 이 션 바 -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation
+</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LOGO</a>
+            </div>
+
+            <!-- 메 뉴 모 음 -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">드 롭 다 운 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">서 브 메 뉴 1</a>
+                            </li>
+                            <li><a href="#">서 브 메 뉴 2</a>
+                            </li>
+                            <li><a href="#">서 브 메 뉴 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--폼 영 역 -->
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="검색어 입력 ">
+                    </div>
+                    <button type="submit" class="btn
+btn-default">검 색 </button>
+
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <!--컨 텐 츠 영 역 -->
+        <article>
+            <!--페 이 지 헤 더 영 역 -->
+            <!--.page-header 쓰면 아래 선도 생기고 위에 여백도 생김
+                                  즉 그냥 콘텐츠와 제목의 구분이 확실해짐 (24와비교)-->
+            <div class="page-header">
+                <h1> 여기는 페이지제목부분 입니다 .</h1>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non orci interdum, pharetra dui nec, eleifend ligula. Integer rutrum nunc a mi luctus vehicula. Aenean ut odio euismod, fringilla leo quis, tincidunt tellus. Pellentesque ultricies lectus non faucibus semper. Ut egestas turpis sed purus dignissim, quis vehicula odio convallis. Suspendisse egestas rutrum velit sit amet cursus. Suspendisse a sapien ac enim pretium egestas. Mauris eget risus ut velit molestie pretium. </p>
+            <p>Integer ac molestie orci. Sed eget suscipit ante. Donec suscipit lectus sed lectus elementum mollis. Vivamus tempor libero vitae ligula rhoncus sollicitudin. Mauris pretium eros non mauris pharetra, sit amet iaculis sapien egestas. Maecenas sodales augue at sapien facilisis, ut venenatis justo sodales. Nam est mi, semper at enim tincidunt, faucibus hendrerit risus. Morbi ligula libero, laoreet non libero in, adipiscing sagittis eros. In hac habitasse platea dictumst. Aenean nec accumsan mi. Nam dapibus mattis vestibulum. Duis eget purus volutpat, cursus nisi quis, ullamcorper diam. Cras commodo sodales quam, eget consectetur lorem laoreet vel. Curabitur rhoncus metus vitae eleifend porttitor. Donec congue orci id tortor laoreet, et fermentum lectus tincidunt. Nullam ac tincidunt ante. </p>
+            <p>Aliquam erat volutpat. Duis tincidunt mattis orci et lacinia. Praesent posuere fringilla dui ut vestibulum. Maecenas eleifend odio id tincidunt cursus. Donec molestie orci nulla, sed lobortis libero accumsan et. Quisque libero nisi, molestie a elit vel, ultricies mollis ipsum. Praesent semper massa et pharetra aliquet. </p>
+            <p>Aliquam et fringilla odio. Integer tristique vehicula posuere. Aenean vulputate a lectus sed vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tincidunt dui vitae viverra mattis. Sed eget enim enim. Curabitur blandit turpis quis metus tincidunt, quis egestas tortor gravida. Maecenas fermentum turpis justo, vel fermentum massa scelerisque eget. Vivamus auctor, tortor vel porttitor cursus, sem augue faucibus turpis, sed venenatis ante lacus in augue. Duis faucibus tortor non magna faucibus dictum. Aenean at dictum ligula. Maecenas at arcu massa. In et fermentum quam, a varius risus. Mauris ut turpis et sem tristique scelerisque. Aenean dui erat, laoreet ac faucibus eu, adipiscing ac dolor. </p>
+
+            <p>Etiam justo orci, accumsan a lacinia ac, suscipit id turpis. Nunc auctor erat id risus cursus mollis. Pellentesque semper massa a semper sodales. Proin pretium orci dolor, in lacinia tellus tincidunt non. Praesent pretium nec sem vitae consectetur. Suspendisse ut vestibulum libero. Ut eu eleifend enim, in dapibus nibh. Nullam congue volutpat nisi sit amet iaculis. Nullam dapibus iaculis lectus sed aliquam. Ut ut eros et lectus posuere vestibulum in et felis. Etiam eu est iaculis, faucibus lectus ac, ultrices odio. </p>
+        </article>
+    </div>
+    <!-- container 끝 -->
+</body>
+
+</html>

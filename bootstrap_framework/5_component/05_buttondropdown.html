@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>버튼드롭다운</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <h1> 버 튼 드 롭 다 운 </h1>
+            <h4> 일 반 적 인 버 튼 드 롭 다 운 </h4>
+            <!--버 튼 1 그 룹 -->
+            <div class="btn-group">
+               <!--class="dropdown-toggle"이 있어야 드롭다운 버튼으로 변경됨-->
+                <button type="button" class="btn btn-default
+dropdown-toggle" data-toggle="dropdown"> 버 튼 1 
+               <!--caret이 역삼각형 그 버튼의 내려가는 모양이야-->
+               <span class="caret"></span>
+                </button> 
+                <!--버튼을 클릭했을 때 나타나는 메뉴 영역-->
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <!--메뉴안의 구분선-->
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+           
+           
+            <!--버튼2그룹-->
+            <div class="btn-group">
+            <!--class="btn btn-default" 를 쓰면 
+               둥근모서리 적용이 되지 않는 버튼모양 생김-->
+                <button type="button" class="btn btn-default" 
+                        data-toggle="dropdown"> 버튼 2 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--클릭버튼그룹-->
+            <div class="btn-group">
+               <!--강조색이 들어간 버튼: btn-primary-->
+                <button type="button" class="btn btn-default
+btn-primary dropdown-toggle" data-toggle="dropdown"> 클릭 
+               <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    
+                    <!--메뉴 안의 구분선-->
+                    </li>
+                    <li class="divider"></li>
+
+                    <li><a href="#">다른 메뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h4>분할된 버튼드롭다운 </h4>
+            <!--버 튼 1 그 룹 -->
+            <div class="btn-group">
+               <!--버튼이 2개의 버튼으로 나뉘어져있군-->
+                <button type="button" class="btn btn-default"> 버튼 1 </button>
+                <!--우측의 실제 작동하는 버튼-->
+                <button type="button" class="btn btn-default dropdown-toggle" 
+                   data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--버 튼 2 그 룹 -->
+            <div class="btn-group">
+               <!--색적용했음 btn-danger-->
+                <button type="button" class="btn btn-default
+btn-danger"> 버 튼 2 </button>
+                <button type="button" class="btn btn-default
+btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h4>버튼드롭다운 크기조절 </h4>
+            <!--버 튼 1 그 룹 -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-lg"> 버 튼 1 </button>
+                <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--클 릭 버 튼 그 룹 -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-sm btn-primary dropdown-toggle" data-toggle="dropdown"> 클 릭 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+            <h4>드롭업과 드롭다운 비교 </h4>
+            <!--드 롭 업 버 튼 그 룹 -->
+            <!--.dropup:하위메뉴를 위로 표시해주는 클래스-->
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 버 튼 1 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--드롭다운 버튼그룹 -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="dropdown"> 버 튼 2 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">메 뉴 1</a>
+                    </li>
+                    <li><a href="#">메 뉴 2</a>
+                    </li>
+                    <li><a href="#">메 뉴 3</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#">다 른 메 뉴 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>

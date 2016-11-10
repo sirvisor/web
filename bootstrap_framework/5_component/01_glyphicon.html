@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--이거없으면 모바일지원(반응형)안돼-->
+    <!--위 3개의 메타 태그는 +반드시+ head 태그 처음에 작성해야함-->
+    <title>부트스트랩 웹아이콘 glyphicon</title>
+    <!--font1은 사파리에서 적용안되니까 웹폰트를 사용해보자.-->
+
+    <!--부트 스트랩-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!--jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--모든 컴파일된 플러그인 포함-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .red {
+            color: #c00;
+        }
+        
+        .blue {
+            color: #08F;
+        }
+    </style>
+</head>
+
+<body>
+    <!--http://glyphicons.com-->
+    <div class="container">
+
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-left"></span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-center"></span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-right"></span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+
+                <br>
+                <h2>다양한 크기의 버튼</h2>
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-xs">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+
+                        <hr>
+                        <h2>아이콘과 텍스트</h2>
+                        <span class="glyphicon glyphicon-phone-alt"></span> 123-4567-8912
+                        <hr>
+                        <h2>스타일로 색상지정</h2>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon-glyphicon-thumbs-up"></span>좋아요
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+</body>
+
+</html>

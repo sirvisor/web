@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>모달 이벤트</title>
+
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- Respond.js 는 직접 실행(file://)을 통해 페이지를 볼 때는 동작하지 않는다 -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <!-- 부트스트랩 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부트스트랩 추가 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--부트스트랩 jQuery(부트스트랩의 자바스크립트 플러그인을 위해 필요)-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('#myModal').modal('hide');
+        });
+    </script>
+    <!-------------------이벤트---------------------------
+    show.bs.modal : show 인스턴스 메소드가 호출되는 즉시 실행
+    hide.bs.modal : hide 인스턴스 메소드가 호출되는 즉시 실행
+    shown.bs.modal : 모달이 사용자에게 보여졌을때 실행(css 전환 완료때 까지 대기)
+    hidden.bs.modal : 사용자에 의해 모달이 감추어지는 것이 종료되면 실행
+    laoded.bs.modal : 원격(remote) 옵션을 사용한 컨텐츠가 포함된 모달인 경우 즉시 실행
+    ----------------------------------------------------->
+    <script>
+        $(function () {
+            $('#myModal').on('hide.bs.modal', function () {
+                alert('닫기버튼을 누르면 경고창 출력 ');
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>모달윈도우이벤트</h2>
+
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">모 달 윈 도 우 실 행 </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">모 달 제 목 </h4>
+                    </div>
+                    <div class="modal-body">
+                        닫 기 버 튼 에 이 벤 트 연 결
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn
+btn-default" data-dismiss="modal">닫 기 </button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <!-- /.modal -->
+    </div>
+
+</body>
+
+</html>
